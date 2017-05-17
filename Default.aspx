@@ -9,7 +9,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
-     Hello World 123 6666 777
+     Hello World
     </div>
     </form>
 </body>
