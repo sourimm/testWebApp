@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Bom>
+<PartList>
+  <Part>
+    <Type>Part</Type>
+    <Name>Part001</Name>
+    <Revision>1.0</Revision>
+    <EffectivityDate>2017-05-02</EffectivityDate>
+    <EstimatedCost>30.00</EstimatedCost>
+    <TargetCost>25.00</TargetCost>
+    <Title>Part001</Title>
+    <UOM>test</UOM>
+    <UOMType>Proportion</UOMType>
+    <Weight>2.50</Weight>
+    <RelatedIssueType>Issue</RelatedIssueType>
+    <RelatedIssueName>Issue001</RelatedIssueName>
+    <RelatedIssueRevision>1.00</RelatedIssueRevision>
+    <State></State>
+  </Part>
+</PartList>
+
+<IssueList>
+  <Issue>
+    <Type>Issue</Type>
+    <Name>Issue001</Name>
+    <Revision>1.0</Revision>
+    <Originator>S Mitra</Originator>
+    <RequirementType>Requirement</RequirementType>
+    <RequirementName>Req001</RequirementName>
+    <RequirementRevision>1.00</RequirementRevision>
+    <ChangeOrder>2</ChangeOrder>
+    <Priority>5</Priority>
+    <Description>Test Issue</Description>
+    <ReportingOrg>Test</ReportingOrg>
+    <State></State>
+    <IssueCategory>Create</IssueCategory>
+    <IssueClassification>Test</IssueClassification>
+  </Issue>
+</IssueList>
+
+<RequirementList>
+  <Requirement>
+    <Type>Requirement</Type>
+    <Name>Req001</Name>
+    <Revision>1.00</Revision>
+    <State>Private</State>
+    <Title>Req 001</Title>
+    <Owner>S Mitra</Owner>
+    <Priority>High</Priority>
+    <Difficulty>High</Difficulty>
+    <Importance>High</Importance>
+    <SponsoringCustomer></SponsoringCustomer>
+    <Category>Category1</Category>
+    <Classification></Classification>
+  </Requirement>
+</RequirementList>
+
+<TestCaseList>
+  <TestCase>
+    <Type>Test Case</Type>
+    <Name>T001</Name>
+    <Revision>1.00</Revision>
+    <Description>Test</Description>
+    <State>Private</State>
+    <Title>T001</Title>
+    <Owner>S Mitra</Owner>
+    <CompletionDate>2017-06-02</CompletionDate>
+    <ValidationStatus></ValidationStatus>
+    <RequirementType>Requirement</RequirementType>
+    <RequirementName>Req001</RequirementName>
+    <RequirementRevision>1.00</RequirementRevision>
+  </TestCase>
+</TestCaseList>
+
+</Bom>

@@ -1,0 +1,110 @@
+<?xml version = "1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="IssueList" type="IssueList" />
+	<xs:element name="PartList" type="PartList" />
+	<xs:element name="RequirementList" type="RequirementList" />
+	<xs:element name="TestCaseList" type="TestCaseList" />
+
+	<xs:complexType name="IssueList">
+		<xs:sequence>
+			<xs:element name="Issue" type="Issue" maxOccurs="unbounded"
+				minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="PartList">
+		<xs:sequence>
+			<xs:element name="Part" type="Part" maxOccurs="unbounded"
+				minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="RequirementList">
+		<xs:sequence>
+			<xs:element name="Requirement" type="Requirement"
+				maxOccurs="unbounded" minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="TestCaseList">
+		<xs:sequence>
+			<xs:element name="TestCase" type="TestCase" maxOccurs="unbounded"
+				minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="Part">
+		<xs:sequence>
+			<xs:element name="Type" type="xs:string" />
+			<xs:element name="Name" type="xs:string" />
+			<xs:element name="Revision" type="xs:string" />
+			<xs:element name="EffectivityDate" type="xs:string" />
+			<xs:element name="EstimatedCost" type="xs:string" />
+			<xs:element name="TargetCost" type="xs:string" />
+			<xs:element name="Title" type="xs:string" />
+			<xs:element name="UOM" type="xs:string" />
+			<xs:element name="UOMType" type="xs:string" />
+			<xs:element name="Weight" type="xs:string" />
+			<xs:element name="RelatedIssueType" type="xs:string" />
+			<xs:element name="RelatedIssueName" type="xs:string" />
+			<xs:element name="RelatedIssueRevision" type="xs:string" />
+			<xs:element name="State" type="xs:string" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="Issue">
+		<xs:sequence>
+			<xs:element name="Type" type="xs:string" />
+			<xs:element name="Name" type="xs:string" />
+			<xs:element name="Revision" type="xs:string" />
+			<xs:element name="Originator" type="xs:string" />
+			<xs:element name="RequirementType" type="xs:string" />
+			<xs:element name="RequirementName" type="xs:string" />
+			<xs:element name="RequirementRevision" type="xs:string" />
+			<xs:element name="ChangeOrder" type="xs:string" />
+			<xs:element name="Priority" type="xs:string" />
+			<xs:element name="Description" type="xs:string" />
+			<xs:element name="ReportingOrg" type="xs:string" />
+			<xs:element name="State" type="xs:string" />
+			<xs:element name="IssueCategory" type="xs:string" />
+			<xs:element name="IssueClassification" type="xs:string" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="TestCase">
+		<xs:sequence>
+			<xs:element name="Type" type="xs:string" />
+			<xs:element name="Name" type="xs:string" />
+			<xs:element name="Revision" type="xs:string"></xs:element>
+			<xs:element name="Description" type="xs:string"></xs:element>
+			<xs:element name="State" type="xs:string"></xs:element>
+			<xs:element name="Title" type="xs:string"></xs:element>
+			<xs:element name="Owner" type="xs:string"></xs:element>
+			<xs:element name="CompletionDate" type="xs:string"></xs:element>
+			<xs:element name="ValidationStatus" type="xs:string"></xs:element>
+			<xs:element name="RequirementType" type="xs:string"></xs:element>
+			<xs:element name="RequirementName" type="xs:string"></xs:element>
+			<xs:element name="RequirementRevision" type="xs:string"></xs:element>
+			
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="Requirement">
+		<xs:sequence>
+			<xs:element name="Type" type="xs:string" />
+			<xs:element name="Name" type="xs:string" />
+			<xs:element name="Revision" type="xs:string"></xs:element>
+			<xs:element name="State" type="xs:string"></xs:element>
+			<xs:element name="Title" type="xs:string"></xs:element>
+			<xs:element name="Owner" type="xs:string"></xs:element>
+			<xs:element name="Priority" type="xs:string"></xs:element>
+			<xs:element name="Difficulty" type="xs:string"></xs:element>
+			<xs:element name="Importance" type="xs:string"></xs:element>
+			<xs:element name="SponsoringCustomer" type="xs:string"></xs:element>
+			<xs:element name="Category" type="xs:string"></xs:element>
+			<xs:element name="Classification" type="xs:string"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+</xs:schema>

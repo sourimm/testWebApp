@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Bom>
+<PartList>
+  <Part>
+    <Type>test</Type>
+    <Name>Part001</Name>
+    <Revision></Revision>
+    <EffectivityDate></EffectivityDate>
+    <EstimatedCost></EstimatedCost>
+    <TargetCost></TargetCost>
+    <Title>Part001</Title>
+    <UOM></UOM>
+    <UOMType></UOMType>
+    <Weight></Weight>
+    <RelatedIssueType>Bug</RelatedIssueType>
+    <RelatedIssueName>Issue001</RelatedIssueName>
+    <RelatedIssueRevision></RelatedIssueRevision>
+    <State></State>
+  </Part>
+</PartList>
+
+<IssueList>
+  <Issue>
+    <Type>Bug</Type>
+    <Name>Issue001</Name>
+    <Revision></Revision>
+    <Originator></Originator>
+    <RequirementType></RequirementType>
+    <RequirementName></RequirementName>
+    <RequirementRevision></RequirementRevision>
+    <ChangeOrder></ChangeOrder>
+    <Priority></Priority>
+    <Description>Test Issue</Description>
+    <ReportingOrg></ReportingOrg>
+    <State></State>
+    <IssueCategory></IssueCategory>
+    <IssueClassification></IssueClassification>
+  </Issue>
+</IssueList>
+
+</Bom>
